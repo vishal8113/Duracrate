@@ -284,7 +284,7 @@ function Products() {
                   }}
                 >
                   <img
-                    src={product.image}
+                    src={process.env.PUBLIC_URL + product.image}
                     alt={product.name}
                     style={{
                       objectFit: 'contain',
@@ -301,7 +301,7 @@ function Products() {
                   />
                   <Box
                     component="img"
-                    src="/Isi.jpg"
+                    src={process.env.PUBLIC_URL + "/Isi.jpg"}
                     alt="ISI Certified"
                     sx={{
                       position: 'absolute',
