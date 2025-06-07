@@ -110,7 +110,7 @@ const products = [
       "Dry areas only",
       "Green building compatible"
     ],
-    image: "/type_1t.png",
+    image: process.env.PUBLIC_URL + "/type_1t.PNG",
     specifications: {
       "Compliance": "BIS 15477: 2019 - Type 1, EN 12004-C1 T",
       "Color": "Grey",
@@ -129,7 +129,7 @@ const products = [
       "Indoor dry & wet areas",
       "Use with UAT 666 Admix"
     ],
-    image: "/type_2t.png",
+    image: process.env.PUBLIC_URL + "/type_2t.PNG",
     specifications: {
       "Compliance": "BIS 15477:2019 - Type 2 T, EN 12004-C2 T",
       "Color": "Grey",
@@ -150,7 +150,7 @@ const products = [
       "Exceeds Indian & Intl. standards",
       "Green building compatible"
     ],
-    image: "/type_3t.png",
+    image: process.env.PUBLIC_URL + "/type_3t.PNG",
     specifications: {
       "Compliance": "BIS 15477:2019 - Type 3 T, EN 12004 C2 TE",
       "Color": "Grey & White",
@@ -171,7 +171,7 @@ const products = [
       "Highly deformable",
       "Resistant to deformation/vibrations"
     ],
-    image: "/type_3ts.png",
+    image: process.env.PUBLIC_URL + "/type_3ts.PNG",
     specifications: {
       "Compliance": "BIS 15477:2019 - Type 3 TS1, EN 12004-C2 TE S1",
       "Color": "Grey & White",
@@ -190,7 +190,7 @@ const products = [
       "Heavy Duty Applications",
       "Abrasion and Impact Resistant"
     ],
-    image: "/exposy.png",
+    image: process.env.PUBLIC_URL + "/exposy.PNG",
     specifications: {
       "Compliance": "EN 13888-RG, ANSI118.3",
       "Color": "Available in range of different colors (Refer shade card)",
@@ -209,7 +209,7 @@ const products = [
       "Indoor & Outdoor Use",
       "Use with Grout Admix UAT 555"
     ],
-    image: "/grout.png",
+    image: process.env.PUBLIC_URL + "/grout.PNG",
     specifications: {
       "Compliance": "EN 13888 CGM (20) Series (1 kg) UAT SSS 1400 ML",
       "Colour": "Available in range of different colours (refer shade card)",
@@ -284,7 +284,7 @@ function Products() {
                   }}
                 >
                   <img
-                    src={process.env.PUBLIC_URL + product.image}
+                    src={product.image}
                     alt={product.name}
                     style={{
                       objectFit: 'contain',

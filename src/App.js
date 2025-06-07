@@ -97,7 +97,7 @@ function HomePage() {
         "20kg net weight",
         "Reliable performance"
       ],
-      image: "/type_1t.png"
+      image: process.env.PUBLIC_URL + "/type_1t.PNG"
     },
     {
       id: 2,
@@ -109,7 +109,7 @@ function HomePage() {
         "20kg net weight",
         "Export quality product"
       ],
-      image: "/type_2t.png"
+      image: process.env.PUBLIC_URL + "/type_2t.PNG"
     },
     {
       id: 3,
@@ -121,7 +121,7 @@ function HomePage() {
         "20kg net weight",
         "Professional grade"
       ],
-      image: "/type_3t.png"
+      image: process.env.PUBLIC_URL + "/type_3t.PNG"
     },
     {
       id: 4,
@@ -133,7 +133,7 @@ function HomePage() {
         "20kg net weight",
         "Premium quality"
       ],
-      image: "/type_3ts.png"
+      image: process.env.PUBLIC_URL + "/type_3ts.PNG"
     }
   ];
 
@@ -178,14 +178,14 @@ function HomePage() {
 
   // Slideshow state
   const slideImages = [
-    '/SampleImg_1.jpg',
-    '/SampleImg_2.jpg',
-    '/SampleImg_3.jpg',
-    '/SampleImg_4.jpg',
-    '/SampleImg_5.jpg',
-    '/SampleImg_6.jpg',
-    '/SampleImg_7.jpg',
-    '/SampleImg_8.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_1.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_2.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_3.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_4.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_5.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_6.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_7.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_8.jpg',
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
@@ -225,7 +225,7 @@ function HomePage() {
           {/* Logo */}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, mr: 3 }}>
             <Box sx={{ width: 38, height: 38, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src={process.env.PUBLIC_URL + "/logo.png"} alt="Duracrate Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+              <img src={process.env.PUBLIC_URL + "/logo.PNG"} alt="Duracrate Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
             </Box>
             <Typography
               variant="h5"
@@ -589,17 +589,17 @@ function HomePage() {
           <Grid container spacing={4} justifyContent="center">
             {[
               {
-                img: process.env.PUBLIC_URL + './construction_consult_sample.png',
+                img: process.env.PUBLIC_URL + '/construction_consult_sample.png',
                 title: 'Consultation for your home',
                 desc: 'Set the right foundation to your homebuilding needs with the right tools and estimators',
               },
               {
-                img: process.env.PUBLIC_URL + './building_home.jpg',
+                img: process.env.PUBLIC_URL + '/building_home.jpg',
                 title: 'Build your home',
                 desc: 'Bring your vision to reality with our expert services and quality products',
               },
               {
-                img: process.env.PUBLIC_URL + './beautify_home.jpg',
+                img: process.env.PUBLIC_URL + '/beautify_home.jpg',
                 title: 'Beautify your home',
                 desc: 'Transform your home into a beautiful haven with our range of home beautification products',
               },
@@ -1067,7 +1067,7 @@ function HomePage() {
                   }}
                 />
                 <img
-                  src={process.env.PUBLIC_URL + "./construction_site.jpg"}
+                  src={process.env.PUBLIC_URL + "/construction_site.jpg"}
                   alt="Construction Site"
                   style={{
                     width: '100%',
@@ -1268,7 +1268,7 @@ function HomePage() {
             <Grid item xs={12} md={6}>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
                 <Box sx={{ width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={process.env.PUBLIC_URL + "/logo.png"} alt="Duracrate Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  <img src={process.env.PUBLIC_URL + "/logo.PNG"} alt="Duracrate Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                 </Box>
                 <Typography variant="h6" color="#00b4d8" sx={{ fontWeight: 'bold', fontSize: '1.3rem' }}>
                   Duracrate
