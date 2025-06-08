@@ -140,7 +140,7 @@ const products = [
   },
   {
     id: 3,
-    name: "111 (Type 1/T) Thin Set Adhesive (C1T)",
+    name: "111 (Type 1/T) Thin Set Adhesive",
     description: "Factory made cementitious polymer modified adhesive for fixing ceramic / clay tiles of small format for interior use only. It is suitable for both floor and wall applications for dry areas over cementitious surface only. Ideal for use in green buildings.",
     features: [
       "Suitable for ceramic tiles",
@@ -158,7 +158,7 @@ const products = [
   },
   {
     id: 4,
-    name: "211 (Type 2/T) Premium Wall & Floor Adhesive (C2T)",
+    name: "211 (Type 2/T) Premium Wall & Floor Adhesive",
     description: "A high polymer modified thin set tile adhesive for fixing all types of ceramic & vitrified tiles upto 8 sq.ft. on wall & floors and small size natural stones on floors and wall over cementitious substrates for indoor dry & wet area applications only. For improved performance use with UAT 666 Admix.",
     features: [
       "High polymer modified",
@@ -177,7 +177,7 @@ const products = [
   },
   {
     id: 5,
-    name: "311 (Type 3/T) Wall & Floor MFT Adhesive (C2TE)",
+    name: "311 (Type 3/T) Wall & Floor MFT Adhesive",
     description: "Multipurpose high-performance polymer modified fibre reinforced cementitious tile adhesive for installation of medium & large format ceramic / vitrified tiles / glass mosaics / terrazzo & natural stones upto 18 sq.ft. on floor and wall where nominal substrate movement is expected. A high-grade adhesive especially for commercial area, where floorings are prone to shocks due to heavy traffic. When used with Admix UAT 666, produces high strength adhesive that exceeds Indian as well as International standards. Ideal for green buildings.",
     features: [
       "Fibre reinforced",
@@ -198,7 +198,7 @@ const products = [
   },
   {
     id: 6,
-    name: "411 (Type 3/TS1) Platinum Hi - Flex Adhesive (C2TS1)",
+    name: "411 (Type 3/TS1) Platinum Hi - Flex Adhesive",
     description: "Premium Highly flexible adhesive for installation of large format tiles/stones/slim tiles/glass mosaics upto 25 sq.ft. on floors and walls for indoor as well as outdoor areas especially in critical conditions, higher vertical heights and water submerged conditions. Highly fibre reinforced with water repellent properties, highly deformable adhesives makes it utmost choice for difficult applications subjected to deformations/ vibrations.",
     features: [
       "Highly flexible",
@@ -301,21 +301,21 @@ function Products() {
                     }}
                   />
                   {product.id > 2 && (
-                    <Box
-                      component="img"
-                      src={process.env.PUBLIC_URL + "/Isi.jpg"}
-                      alt="ISI Certified"
-                      sx={{
-                        position: 'absolute',
-                        top: 16,
-                        left: 16,
-                        width: 48,
-                        height: 'auto',
-                        borderRadius: '4px',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
-                        zIndex: 3,
-                      }}
-                    />
+                  <Box
+                    component="img"
+                    src={process.env.PUBLIC_URL + "/Isi.jpg"}
+                    alt="ISI Certified"
+                    sx={{
+                      position: 'absolute',
+                      top: 16,
+                      left: 16,
+                      width: 48,
+                      height: 'auto',
+                      borderRadius: '4px',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                      zIndex: 3,
+                    }}
+                  />
                   )}
                 </Box>
                 <CardContent sx={{ flexGrow: 1, p: 3 }}>

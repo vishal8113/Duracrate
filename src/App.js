@@ -89,27 +89,49 @@ function HomePage() {
   const products = [
     {
       id: 1,
+      name: "Type 1T Adhesive (C1T)",
+      description: "Versatile adhesive designed for regular sized ceramic tiles in dry areas and normal conditions.",
+      features: [
+        "Easy application",
+        "Cost-effective solution",
+        "20kg net weight",
+        "Reliable performance"
+      ],
+      image: process.env.PUBLIC_URL + "/type_1t.PNG"
+    },
+    {
+      id: 2,
+      name: "Type 2/T Adhesive (C2T)",
+      description: "Advanced polymer enriched tile adhesive for medium format tiles and natural stone applications.",
+      features: [
+        "Suitable for ceramic tiles",
+        "Interior & exterior use",
+        "20kg net weight",
+        "Export quality product"
+      ],
+      image: process.env.PUBLIC_URL + "/type_2t.PNG"
+    },
+    {
+      id: 3,
       name: "Duracrate Epoxy",
-      description: "Epoxy Resin Based, High Performance Grout for Tiles & Stones. For 1mm-12mm Joints Width. Duracrate Epoxy is a 100% solid epoxy resin-based Stain resistant, chemical resistant and color fast grout for use with Ceramics, Vitrified tiles, Porcelain & Mosaics, Natural & Engineered stones for heavy duty application Due to its water-resistant properties Duracrate Epoxy, it is highly recommended for under water submerged applications. Excellent product for heavy traffic areas and resistance to abrasion and impact.",
+      description: "High-performance epoxy resin-based grout for tiles and stones. Perfect for heavy-duty applications and underwater use.",
       features: [
         "Stain and Chemical Resistant",
-        "Color Fast",
         "Water Resistant",
         "Heavy Duty Applications",
-        "Abrasion and Impact Resistant"
+        "Abrasion Resistant"
       ],
       image: process.env.PUBLIC_URL + "/exposy.PNG"
     },
     {
-      id: 2,
+      id: 4,
       name: "Duracrate Grout",
-      description: "Polymer modified Joint Filler for Tiles & Stone For 1mm-3mm Joint Width. A polymer modified cementitious tile grout with water resistant properties for all kinds of tiles & natural stones. This series is recommended for joints size 1 mm to 3 mm for indoor and outdoor applications for floors, walls & facades. Recommended for use with Grout Admix UAT 555 to get strong, hard, durable & colorfast joints.",
+      description: "Polymer modified joint filler for tiles and stones. Ideal for 1mm-3mm joints in indoor and outdoor applications.",
       features: [
         "Polymer Modified",
         "Water Resistant",
         "For 1mm-3mm Joints",
-        "Indoor & Outdoor Use",
-        "Use with Grout Admix UAT 555"
+        "Indoor & Outdoor Use"
       ],
       image: process.env.PUBLIC_URL + "/grout.PNG"
     }
@@ -859,6 +881,24 @@ function HomePage() {
                           zIndex: 2,
                         }}
                       />
+                      {/* ISI Logo - Only show for Type 1T and Type 2/T */}
+                      {product.id <= 2 && (
+                        <Box
+                          component="img"
+                          src={process.env.PUBLIC_URL + "/Isi.jpg"}
+                          alt="ISI Certified"
+                          sx={{
+                            position: 'absolute',
+                            top: 8,
+                            left: 8,
+                            width: 40,
+                            height: 'auto',
+                            zIndex: 3,
+                            borderRadius: '4px',
+                            boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                          }}
+                        />
+                      )}
                     </Box>
                     <CardContent sx={{ flexGrow: 1, p: 2.5 }}>
                       <Typography 
