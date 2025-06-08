@@ -102,6 +102,44 @@ function JointFillerCalculator() {
 const products = [
   {
     id: 1,
+    name: "Duracrate Epoxy",
+    description: "Epoxy Resin Based, High Performance Grout for Tiles & Stones. For 1mm-12mm Joints Width. Duracrate Epoxy is a 100% solid epoxy resin-based Stain resistant, chemical resistant and color fast grout for use with Ceramics, Vitrified tiles, Porcelain & Mosaics, Natural & Engineered stones for heavy duty application Due to its water-resistant properties Duracrate Epoxy, it is highly recommended for under water submerged applications. Excellent product for heavy traffic areas and resistance to abrasion and impact.",
+    features: [
+      "Stain and Chemical Resistant",
+      "Color Fast",
+      "Water Resistant",
+      "Heavy Duty Applications",
+      "Abrasion and Impact Resistant"
+    ],
+    image: process.env.PUBLIC_URL + "/exposy.PNG",
+    specifications: {
+      "Compliance": "EN 13888-RG, ANSI118.3",
+      "Color": "Available in range of different colors (Refer shade card)",
+      "Pack size": "1 kg and 5 kg pails (3 components)",
+      "Coverage": "Varies with tile size and joint width"
+    }
+  },
+  {
+    id: 2,
+    name: "Duracrate Grout",
+    description: "Polymer modified Joint Filler for Tiles & Stone For 1mm-3mm Joint Width. A polymer modified cementitious tile grout with water resistant properties for all kinds of tiles & natural stones. This series is recommended for joints size 1 mm to 3 mm for indoor and outdoor applications for floors, walls & facades. Recommended for use with Grout Admix UAT 555 to get strong, hard, durable & colorfast joints.",
+    features: [
+      "Polymer Modified",
+      "Water Resistant",
+      "For 1mm-3mm Joints",
+      "Indoor & Outdoor Use",
+      "Use with Grout Admix UAT 555"
+    ],
+    image: process.env.PUBLIC_URL + "/grout.PNG",
+    specifications: {
+      "Compliance": "EN 13888 CGM (20) Series (1 kg) UAT SSS 1400 ML",
+      "Colour": "Available in range of different colours (refer shade card)",
+      "Pack size": "1kg Pouch",
+      "Coverage": "Varies with tile size and joint width"
+    }
+  },
+  {
+    id: 3,
     name: "111 (Type 1/T) Thin Set Adhesive",
     description: "Factory made cementitious polymer modified adhesive for fixing ceramic / clay tiles of small format for interior use only. It is suitable for both floor and wall applications for dry areas over cementitious surface only. Ideal for use in green buildings.",
     features: [
@@ -119,7 +157,7 @@ const products = [
     }
   },
   {
-    id: 2,
+    id: 4,
     name: "211 (Type 2/T) Premium Wall & Floor Adhesive",
     description: "A high polymer modified thin set tile adhesive for fixing all types of ceramic & vitrified tiles upto 8 sq.ft. on wall & floors and small size natural stones on floors and wall over cementitious substrates for indoor dry & wet area applications only. For improved performance use with UAT 666 Admix.",
     features: [
@@ -138,7 +176,7 @@ const products = [
     }
   },
   {
-    id: 3,
+    id: 5,
     name: "311 (Type 3/T) Wall & Floor MFT Adhesive",
     description: "Multipurpose high-performance polymer modified fibre reinforced cementitious tile adhesive for installation of medium & large format ceramic / vitrified tiles / glass mosaics / terrazzo & natural stones upto 18 sq.ft. on floor and wall where nominal substrate movement is expected. A high-grade adhesive especially for commercial area, where floorings are prone to shocks due to heavy traffic. When used with Admix UAT 666, produces high strength adhesive that exceeds Indian as well as International standards. Ideal for green buildings.",
     features: [
@@ -159,7 +197,7 @@ const products = [
     }
   },
   {
-    id: 4,
+    id: 6,
     name: "411 (Type 3/TS1) Platinum Hi - Flex Adhesive",
     description: "Premium Highly flexible adhesive for installation of large format tiles/stones/slim tiles/glass mosaics upto 25 sq.ft. on floors and walls for indoor as well as outdoor areas especially in critical conditions, higher vertical heights and water submerged conditions. Highly fibre reinforced with water repellent properties, highly deformable adhesives makes it utmost choice for difficult applications subjected to deformations/ vibrations.",
     features: [
@@ -179,44 +217,7 @@ const products = [
       "Coverage": "45 to 55 sq.ft/20 kg bag at 3 mm bed thickness, 25 to 35 sq. ft/20 kg bag at 5 mm bed thickness"
     }
   },
-  {
-    id: 5,
-    name: "Duracrate Epoxy",
-    description: "Epoxy Resin Based, High Performance Grout for Tiles & Stones. For 1mm-12mm Joints Width. Duracrate Epoxy is a 100% solid epoxy resin-based Stain resistant, chemical resistant and color fast grout for use with Ceramics, Vitrified tiles, Porcelain & Mosaics, Natural & Engineered stones for heavy duty application Due to its water-resistant properties Duracrate Epoxy, it is highly recommended for under water submerged applications. Excellent product for heavy traffic areas and resistance to abrasion and impact.",
-    features: [
-      "Stain and Chemical Resistant",
-      "Color Fast",
-      "Water Resistant",
-      "Heavy Duty Applications",
-      "Abrasion and Impact Resistant"
-    ],
-    image: process.env.PUBLIC_URL + "/exposy.PNG",
-    specifications: {
-      "Compliance": "EN 13888-RG, ANSI118.3",
-      "Color": "Available in range of different colors (Refer shade card)",
-      "Pack size": "1 kg and 5 kg pails (3 components)",
-      "Coverage": "Varies with tile size and joint width"
-    }
-  },
-  {
-    id: 6,
-    name: "Duracrate Grout",
-    description: "Polymer modified Joint Filler for Tiles & Stone For 1mm-3mm Joint Width. A polymer modified cementitious tile grout with water resistant properties for all kinds of tiles & natural stones. This series is recommended for joints size 1 mm to 3 mm for indoor and outdoor applications for floors, walls & facades. Recommended for use with Grout Admix UAT 555 to get strong, hard, durable & colorfast joints.",
-    features: [
-      "Polymer Modified",
-      "Water Resistant",
-      "For 1mm-3mm Joints",
-      "Indoor & Outdoor Use",
-      "Use with Grout Admix UAT 555"
-    ],
-    image: process.env.PUBLIC_URL + "/grout.PNG",
-    specifications: {
-      "Compliance": "EN 13888 CGM (20) Series (1 kg) UAT SSS 1400 ML",
-      "Colour": "Available in range of different colours (refer shade card)",
-      "Pack size": "1kg Pouch",
-      "Coverage": "Varies with tile size and joint width"
-    }
-  }
+  
 ];
 
 function Products() {
@@ -299,21 +300,23 @@ function Products() {
                       margin: 'auto',
                     }}
                   />
-                  <Box
-                    component="img"
-                    src={process.env.PUBLIC_URL + "/Isi.jpg"}
-                    alt="ISI Certified"
-                    sx={{
-                      position: 'absolute',
-                      top: 16,
-                      left: 16,
-                      width: 48,
-                      height: 'auto',
-                      borderRadius: '4px',
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
-                      zIndex: 3,
-                    }}
-                  />
+                  {product.id > 2 && (
+                    <Box
+                      component="img"
+                      src={process.env.PUBLIC_URL + "/Isi.jpg"}
+                      alt="ISI Certified"
+                      sx={{
+                        position: 'absolute',
+                        top: 16,
+                        left: 16,
+                        width: 48,
+                        height: 'auto',
+                        borderRadius: '4px',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                        zIndex: 3,
+                      }}
+                    />
+                  )}
                 </Box>
                 <CardContent sx={{ flexGrow: 1, p: 3 }}>
                   <Typography

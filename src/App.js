@@ -89,7 +89,7 @@ function HomePage() {
   const products = [
     {
       id: 1,
-      name: "Type 1T Adhesive",
+      name: "Type 1T Adhesive (C1T)",
       description: "Versatile adhesive designed for regular sized ceramic tiles in dry areas and normal conditions.",
       features: [
         "Easy application",
@@ -101,7 +101,7 @@ function HomePage() {
     },
     {
       id: 2,
-      name: "Type 2/T Adhesive",
+      name: "Type 2/T Adhesive (C2T)",
       description: "Advanced polymer enriched tile adhesive for medium format tiles and natural stone applications.",
       features: [
         "Suitable for ceramic tiles",
@@ -113,7 +113,7 @@ function HomePage() {
     },
     {
       id: 3,
-      name: "Type 3/T Adhesive",
+      name: "Type 3/T Adhesive (C2TE)",
       description: "High-performance adhesive for natural stone, ceramic, and porcelain tiles in critical applications.",
       features: [
         "Fast setting formula",
@@ -125,7 +125,7 @@ function HomePage() {
     },
     {
       id: 4,
-      name: "Type 3/TS1 Adhesive",
+      name: "Type 3/TS1 Adhesive (C2TS1)",
       description: "Highly advanced modified adhesive for all types of natural and artificial stone applications.",
       features: [
         "Maximum flexibility",
@@ -178,12 +178,11 @@ function HomePage() {
 
   // Slideshow state
   const slideImages = [
-    process.env.PUBLIC_URL + '/SampleImg_1.jpg',
-    process.env.PUBLIC_URL + '/SampleImg_2.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_6.jpg',
     process.env.PUBLIC_URL + '/SampleImg_3.jpg',
     process.env.PUBLIC_URL + '/SampleImg_4.jpg',
     process.env.PUBLIC_URL + '/SampleImg_5.jpg',
-    process.env.PUBLIC_URL + '/SampleImg_6.jpg',
+    process.env.PUBLIC_URL + '/SampleImg_2.jpg',
     process.env.PUBLIC_URL + '/SampleImg_7.jpg',
     process.env.PUBLIC_URL + '/SampleImg_8.jpg',
   ];
@@ -1113,7 +1112,7 @@ function HomePage() {
                     <Avatar sx={{ bgcolor: '#e3f6fd', color: '#00b4d8', width: 44, height: 44 }}>
                       <Phone />
                     </Avatar>
-                    <Typography sx={{ color: '#1e3c72', fontWeight: 500 }}>+91 93500 05847</Typography>
+                    <Typography sx={{ color: '#1e3c72', fontWeight: 500 }}>+91 93500 05847, +91 87086 97436</Typography>
                   </Box>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                     <Avatar sx={{ bgcolor: '#e3f6fd', color: '#00b4d8', width: 44, height: 44 }}>
